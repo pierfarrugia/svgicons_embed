@@ -40,7 +40,7 @@ Type “material icons” in your browser to search Google Material icon, or cli
 
 [https://fonts.google.com/icons?selected=Material+Icons](https://fonts.google.com/icons?selected=Material+Icons)
 
-![google icon](https://github.com/pierfarrugia/svgiconsCSS/blob/main/materialIcon.webp)
+![google icon](https://github.com/pierfarrugia/svgiconsEmbedded/blob/main/materialIcon.webp)
 
 When in Material Icon page, type “menu” in the search, select it, a panel arrive on right. On bottom of the panel, you have 2
 buttons: SVG and PNG. Click on SVG, the SVG is downloaded in your computer.
