@@ -2,7 +2,7 @@
 SVG icons library embedded in html
 
 
-*you can find a version of SVG icons in CSS background image here: [SVG Icons CSS](https://github.com/pierfarrugia/svgiconsEmbedded)* 
+*you can find a version of SVG icons in CSS background image here: [SVG Icons CSS](https://github.com/pierfarrugia/svgiconsCSS)* 
 
 To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page.
 
