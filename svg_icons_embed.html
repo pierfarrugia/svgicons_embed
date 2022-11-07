@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Icons Embedded</title>
+
+    <style>
+        *, *:before, *:after { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            min-height: 100%;
+        }
+        body {
+            padding: 0;
+            background-color: #202020;
+            color: white;
+        }
+        section {
+            margin: 0;
+            padding: 2em;
+            height: 100vh;
+        }
+
+        /* ======== ICO ======== */
+        .ico {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 1em;
+        }
+    </style>
+
+</head>
+<body>
+
+<section style="text-align:center;width:100%;height: 100%">
+    <span class="ico" data-icon="ico_menu" style="font-size: 4em"></span>
+
+    <div style="font-size: 8em">
+        <span class="ico" data-icon="ico_arrow_upward"></span>
+    </div>
+
+    <div class="ico" data-icon="ico_arrow_downward" style="font-size: 150%"></div>
+
+    <br>
+    <br>
+
+    <div style="font-size: 36px;color: red">
+        <span class="ico" data-icon="ico_expand_more" style="vertical-align: middle"></span>
+        <span>ICO vertical aligned middle</span>
+    </div>
+    <br>
+    <div style="font-size: 36px">
+        <span class="ico" data-icon="ico_expand_less" style="vertical-align: middle"></span>
+        <span style="vertical-align: middle">ICO and Text vertical aligned middle</span>
+    </div>
+
+</section>
+
+
+
+<div id="icons" style="display: none">
+
+    <div id="ico_menu">
+        <svg viewBox="0 0 48 48" style="fill:currentColor">
+            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
+        </svg>
+    </div>
+
+    <div id="ico_arrow_upward">
+        <svg viewBox="0 0 48 48" style="fill:currentColor">
+            <path d="M22.5 40V13.7L10.1 26.1 8 24 24 8l16 16-2.1 2.1-12.4-12.4V40Z"/>
+        </svg>
+    </div>
+
+    <div id="ico_arrow_downward">
+        <svg viewBox="0 0 48 48" style="fill:currentColor">
+            <path d="M24 40 8 24l2.1-2.1 12.4 12.4V8h3v26.3l12.4-12.4L40 24Z"/>
+        </svg>
+    </div>
+
+    <div id="ico_expand_more">
+        <svg viewBox="0 0 48 48" style="fill:currentColor">
+            <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/>
+        </svg>
+    </div>
+
+    <div id="ico_expand_less">
+        <svg viewBox="0 0 48 48" style="fill:currentColor">
+            <path d="M14.15 30.75 12 28.6l12-12 12 11.95-2.15 2.15L24 20.85Z"/>
+        </svg>
+    </div>
+</div>
+
+<script>
+
+    const icons = () => {
+        let eicons = document.querySelectorAll('.ico');
+        eicons.forEach(e => {
+            console.log(e.dataset.icon);
+            let esvg = document.querySelector('#' + e.dataset.icon);
+            e.innerHTML = esvg.innerHTML;
+        })
+    }
+    window.addEventListener('load', icons);
+
+</script>
+</body>
+</html>
