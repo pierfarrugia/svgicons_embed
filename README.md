@@ -27,6 +27,7 @@ changed, and can be used with CSS class and data attributes. In add library has 
 
 [See it in action full screen](https://aonecommunication.ch/dev/creativeprog/content/svg_icons_embed.html)
 
+*right button on link, open in new tab*
 
 
 
@@ -36,7 +37,7 @@ changed, and can be used with CSS class and data attributes. In add library has 
 
 ### The icon
 
-Type “material icons” in your browser to search Google Material icon, or click here:
+Type “material icons” in your browser to search Google Material icon, or click here (right button, open in new tab):
 
 [https://fonts.google.com/icons?selected=Material+Icons](https://fonts.google.com/icons?selected=Material+Icons)
 
@@ -55,9 +56,9 @@ Open the SVG file in your text editor:
 
 #### cleaning the svg
 
-We don't really the xmlns definition in this embedded version.
+We don't really the xmlns definition in this embedded version (that'll save some bytes)
 
-We need a viewbox whichi will mainly gives us a ratio. The variable version is now based on a 48px x 48px (previous version was 24x24px)
+We need a viewbox which will mainly gives us a ratio. The variable version is now based on a 48px x 48px (previous version was 24x24px)
 
 For the color we'll add a fill with the magic "currentColor"
 
@@ -72,7 +73,7 @@ CSS
 
 To define the ico we'll need 1 class:
 
-* ico: to define base values for all ico
+* ico: to define base values for all icons
 
 
 ```
@@ -152,10 +153,11 @@ Conclusion
 
 It's quite easy to build your own svg library this way and to save big amount of loading time.
 
-Regarding the CSS library way, the big pro is that it's lot easier to build (no data URI, no color filter to build).
+Regarding the CSS library way, the big pro of this embed version is that it's lot easier to build (no data URI, no color filter to build).
 Color of the element is applied (inherited), and size follow your HTML.
+The big pro of the CSS is that's it's only CSS: no javascript.
 
-Regarding SVG sprite, it's not more complicated to build (even slightly easier), but SVG sprite always complicated to size with text.
+Regarding SVG sprite, this embed version is not more complicated to build (even slightly easier), but SVG sprite always complicated to size with text, and not so easy for color.
 
 
 Thanks for reading
