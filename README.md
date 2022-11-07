@@ -21,7 +21,7 @@ changed, and can be used with CSS class and data attributes. In add library has 
 ---
 
 
-![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/svg_icons.webp)
+![alt text](https://github.com/pierfarrugia/svgiconsCSS/blob/main/svg_icons_embed.webp)
 
 [Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsEmbedded)
 
