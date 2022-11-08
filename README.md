@@ -1,14 +1,18 @@
 # SVG Icons Embedded
+
 SVG icons library embedded in html
 
+*you can find a version of SVG icons in CSS background image here: [SVG Icons CSS](https://github.com/pierfarrugia/svgiconsCSS)*
 
-*you can find a version of SVG icons in CSS background image here: [SVG Icons CSS](https://github.com/pierfarrugia/svgiconsCSS)* 
+To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page. There
+are several well known icon fonts like Font-Awesome, or Google Material icons. But you have to load the whole fonts (5000 icons,
+from 256Kb to ...more) where you're using 8-10 icons in your website.
 
-To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page. There are several well known icon fonts like Font-Awesome, or Google Material icons. But you have to load the whole fonts (5000 icons, from 256Kb to ...more) where you're using 8-10 icons in your website.
+Here we are building an embedded HTML library. You can embedded only icons needed (lot less weight), and in add you can also put
+svg from different fonts, or creation.
 
-Here we are building an embedded HTML library. You can embedded only icons needed (lot less weight), and in add you can also put svg from different fonts, or creation.
-
-**The icons would have to be scalable as font, can have their color changed, and can be used with CSS class and data attributes. In add library has to be easy to setup.**
+**The icons would have to be scalable as font, can have their color changed, and can be used with CSS class and data attributes.
+In add library has to be easy to setup.**
 
 ---
 
@@ -17,7 +21,9 @@ Here we are building an embedded HTML library. You can embedded only icons neede
 
 [Read this on HTML page](https://aonecommunication.ch/blog.html#svg_icons_embed)
 
-[See it in action full screen](https://aonecommunication.ch/content/svgicons_embed/svg_icons_embed.html)
+[demo full screen](https://aonecommunication.ch/content/svgicons_embed/svg_icons_embed.html)
+
+[GitHub](https://github.com/pierfarrugia/svgicons_embed)
 
 *right button on link, open in new tab*
 
@@ -26,19 +32,19 @@ Here we are building an embedded HTML library. You can embedded only icons neede
 
 ---
 
-
 ### The icon
 
 Type “material icons” in your browser to search Google Material icon, or click here (right button, open in new tab):
 
 [https://fonts.google.com/icons?selected=Material+Icons](https://fonts.google.com/icons?selected=Material+Icons)
 
-![google icon](https://aonecommunication.ch.com/content/svgicons_embed/materialIcon.webp)
+![google icon](https://aonecommunication.ch/content/svgicons_embed/materialIcon.webp)
 
 When in Material Icon page, type “menu” in the search, select it, a panel arrive on right. On bottom of the panel, you have 2
 buttons: SVG and PNG. Click on SVG, the SVG is downloaded in your computer.
 
-*note: google icons font is now a variable font. You can specify several parameters like Fill. In our case, keep initial parameters*
+*note: google icons font is now a variable font. You can specify several parameters like Fill. In our case, keep initial
+parameters*
 
 Open the SVG file in your text editor:
 
@@ -52,7 +58,8 @@ Open the SVG file in your text editor:
 
 We don't really the xmlns definition in this embedded version (that'll save some bytes)
 
-We need a viewbox which mainly gives us a ratio we need. The variable version is now based on a 48px x 48px (previous version was 24x24px)
+We need a viewbox which mainly gives us a ratio we need. The variable version is now based on a 48px x 48px (previous version
+was 24x24px)
 
 For the color we'll add a fill with the magic "currentColor"
 
@@ -66,7 +73,6 @@ CSS
 ---
 
 To define the ico we'll need 1 class ".ico" to define base values for all icons
-
 
 ```
 .ico {
@@ -89,7 +95,8 @@ put 1em everywhere, it’ll scaled regarding the element it’s in.
 HTML
 ---
 
-To have this menu icon in HTML, lets add a DIV with display none at the end of body. In this div, you can add all the icons you need with uniq ID.
+To have this menu icon in HTML, lets add a DIV with display none at the end of body. In this div, you can add all the icons you
+need with uniq ID.
 
 ```
 <div id="icons" style="display: none">
@@ -114,7 +121,6 @@ For 1 icon you add the ico class and a "data-icon" with the name of the icon, he
 ```
     <span class="ico" data-icon="ico_menu"</span>
 ```
-
 
 Javascript
 ----------
@@ -148,14 +154,15 @@ Conclusion
 
 It's quite easy to build your own svg library this way and to save big amount of loading time.
 
-Regarding the CSS library way, the big pro of this embed version is that it's lot easier to build (no data URI, no color filter to build).
+Regarding the CSS library way, the big pro of this embed version is that it's lot easier to build (no data URI, no color filter
+to build).
 
 Color of the element is applied (inherited), and size follow your HTML.
 
 The big pro of the CSS: it's only CSS, no javascript.
 
-Regarding SVG sprite (the traditionnal way!), this embed version is not more complicated to build (even slightly easier), but lot easier to size and to color than SVG sprite.
-
+Regarding SVG sprite (the traditionnal way!), this embed version is not more complicated to build (even slightly easier), but
+lot easier to size and to color than SVG sprite.
 
 Thanks for reading
 
