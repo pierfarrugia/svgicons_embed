@@ -19,7 +19,7 @@ In add library has to be easy to setup.**
 
 ![alt text](https://www.aonecommunication.ch/content/svgicons_embed/svgicons_embed.webp)
 
-[Read this on HTML page](https://www.aonecommunication.ch/blog.html#svg_icons_embed)
+[Read this on HTML page](https://www.aonecommunication.ch/blog.html#svgicons_embed)
 
 [demo full screen](https://www.aonecommunication.ch/content/svgicons_embed/svgicons_embed.html)
 
