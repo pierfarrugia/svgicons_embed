@@ -133,7 +133,9 @@ window.addEventListener('load', icons);
 ```
 
 We search in document every icons with class ".ico".
+
 We loop through this node list "eicons" with a forEach.
+
 For each element, we take its data attribute (name of icon) with dataset, search the corresponding ID, and copy the inner HTML.
 
 You can have several same ico.
