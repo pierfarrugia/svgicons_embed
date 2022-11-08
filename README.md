@@ -17,11 +17,11 @@ In add library has to be easy to setup.**
 ---
 
 
-![alt text](https://aonecommunication.ch/content/svgicons_embed/svg_icons_embed.webp)
+![alt text](https://aonecommunication.ch/content/svgicons_embed/svgicons_embed.webp)
 
 [Read this on HTML page](https://aonecommunication.ch/blog.html#svg_icons_embed)
 
-[demo full screen](https://aonecommunication.ch/content/svgicons_embed/svg_icons_embed.html)
+[demo full screen](https://aonecommunication.ch/content/svgicons_embed/svgicons_embed.html)
 
 [GitHub](https://github.com/pierfarrugia/svgicons_embed)
 
