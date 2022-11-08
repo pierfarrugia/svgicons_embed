@@ -4,28 +4,20 @@ SVG icons library embedded in html
 
 *you can find a version of SVG icons in CSS background image here: [SVG Icons CSS](https://github.com/pierfarrugia/svgiconsCSS)* 
 
-To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page.
+To add icons on website, the easiest way is to use an icon font. Simple ref link in style and after html tag in the page. There are several well known icon fonts like Font-Awesome, or Google Material icons. But you have to load the whole fonts (5000 icons, from 256Kb to ...more) where you're using 8-10 icons in your website.
 
-There are several well known icon fonts like Font-Awesome, or Google Material icons.
+Here we are building an embedded HTML library. In add of you can put only icons needed, you can also put svg from different fonts, or creation.
 
-First time I searched for a font icon, I was looking for the font with the biggest number of icons (2000, 3000,... more than 5000) to have more choices "in case of" even if I were using 8 or 10 only! Now more and more icons gives a ref file to load bigger and bigger! Could be from 128kB
-      to 256kB or even more (384... >750!). That means, even if downloading from a CDN, time will be at best 250ms (fiber
-      connection)
-      but often 750ms or more than 1 second. And that's just for the icons of the website!
-
-5000 icons loaded, using 8 to 10, not really efficient.
-
-**What about building library, with just icons needed. Those icons would have to be scalable as font, can have their color
-changed, and can be used with CSS class and data attributes. In add library has to be easy to setup.**
+**The icons would have to be scalable as font, can have their color changed, and can be used with CSS class and data attributes. In add library has to be easy to setup.**
 
 ---
 
 
-![alt text](https://github.com/pierfarrugia/svgiconsEmbedded/blob/main/svg_icons_embed.webp)
+![alt text](https://aonecommunication.ch/content/svgicons_embedded/svg_icons_embed.webp)
 
-[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svgIconsEmbedded)
+[Read this on HTML page](https://aonecommunication.ch/dev/creativeprog/blog.html#svg_icons_embedded)
 
-[See it in action full screen](https://aonecommunication.ch/dev/creativeprog/content/svg_icons_embed.html)
+[See it in action full screen](https://aonecommunication.ch/blof#/svg_icons_embedhtml)
 
 *right button on link, open in new tab*
 
